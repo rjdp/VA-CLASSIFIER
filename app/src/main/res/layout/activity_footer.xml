@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/profile"
+        android:layout_width="35dp"
+        android:layout_height="70dp"
+        android:layout_weight="15.39"
+        android:background="@drawable/white_square">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <ImageButton
+            android:layout_width="43dp"
+            android:layout_height="39dp"
+            android:id="@+id/profile_btn"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/profile_icon"
+            android:layout_gravity="center"
+            android:clickable="true" />
+
+        <!--  <ImageView
+              android:layout_width="64dp"
+              android:layout_height="62dp"
+              android:layout_gravity="center_horizontal"
+              android:contentDescription="@string/action_settings"
+              android:src="@drawable/profile_icon" />-->
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/classify"
+        android:layout_width="35dp"
+        android:layout_height="70dp"
+        android:layout_weight="18.96"
+        android:background="@drawable/white_square">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLASSIFY"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <ImageButton
+            android:layout_width="41dp"
+            android:layout_height="45dp"
+            android:id="@+id/classify_btn"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/classify_icon"
+            android:layout_gravity="center"
+            android:clickable="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/history"
+        android:layout_width="35dp"
+        android:layout_height="70dp"
+        android:layout_weight="19.81"
+        android:background="@drawable/white_square">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HISTORY"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <ImageButton
+            android:layout_width="46dp"
+            android:layout_height="40dp"
+            android:id="@+id/history_btn"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/history_icon"
+            android:layout_gravity="center"
+            android:clickable="true" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/logout"
+        android:layout_width="35dp"
+        android:layout_height="70dp"
+        android:layout_weight="19.90"
+        android:background="@drawable/white_square">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <ImageButton
+            android:layout_width="51dp"
+            android:layout_height="39dp"
+            android:id="@+id/logout_btn"
+            android:src="@drawable/logout_icon"
+            android:contentDescription="@string/action_settings"
+            android:layout_gravity="center"
+            android:clickable="true" />
+
+
+        <!--  <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="65dp"
+               android:layout_gravity="center_horizontal|top"
+               android:contentDescription="@string/action_settings"
+               android:src="@drawable/logout_icon2" />-->
+    </FrameLayout>
+
+</LinearLayout>

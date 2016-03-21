@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="deedeveloper.examples.va_classifier.User_Management.UserProfile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="447dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="User Profile"
+            android:id="@+id/textViewUserProfile"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="157dp"
+                android:layout_height="47dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ID                            :" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@+id/tvId"
+                android:id="@+id/tvId" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="157dp"
+                android:layout_height="48dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Username              :" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@+id/tvUsername"
+                android:id="@+id/tvUsername" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Email                      :   " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@+id/tvEmail"
+                android:id="@+id/tvEmail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="162dp"
+                android:layout_height="54dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name                     :   " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@+id/textViewName"
+                android:id="@+id/textViewName" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Contact Number   :  " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@+id/textViewConNum"
+                android:id="@+id/textViewConNum" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="169dp"
+                android:layout_height="57dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password               : " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@+id/textViewPassword"
+                android:id="@+id/textViewPassword" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit User"
+            android:id="@+id/buttonEdit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/activity_root" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+

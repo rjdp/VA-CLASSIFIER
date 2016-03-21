@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="deedeveloper.examples.va_classifier.User_Management.EditUser">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Edit Profile"
+            android:id="@+id/textViewEditProfile"
+            android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="157dp"
+                android:layout_height="36dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ID                            :" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@+id/tvId"
+                android:id="@+id/tvId" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="157dp"
+                android:layout_height="50dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Username              :" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@+id/tvUsername"
+                android:id="@+id/tvUsername" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Email                      :   " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@+id/tvEmail"
+                android:id="@+id/tvEmail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name                     :" />
+
+            <EditText
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etName"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Contact Number:" />
+
+            <EditText
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/etConNum"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password               :" />
+
+
+            <EditText
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ellipsize="end"
+                android:ems="10"
+                android:id="@+id/etPassword"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Confirm Password   :" />
+
+
+            <EditText
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ellipsize="end"
+                android:ems="10"
+                android:id="@+id/etConfirmPassword"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Update"
+                android:id="@+id/btnUpdate" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Cancel"
+                android:id="@+id/btnCancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/activity_root" />
+    </LinearLayout>   -->
+
+</LinearLayout>
